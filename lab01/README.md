@@ -14,8 +14,7 @@
 
 ### 8. Adăugați un vers și afișați-l:
 
-`
+```php
 <?php
-echo "<h2> Cobori in jos Luceafar bland<br />Alunecand pe-o raza …</h2>";
+echo "<h2> Cobori în jos Luceafăr blând<br />Alunecând pe-o rază …</h2>";
 ?>
-` 
