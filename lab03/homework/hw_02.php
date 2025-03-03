@@ -32,7 +32,6 @@
 <body>
 
 <table>
-    <!-- Rândul cu literele A-H -->
     <tr>
         <th class="header"></th>
         <?php 
@@ -43,23 +42,20 @@
         ?>
     </tr>
 
-    <!-- Generarea tablei de șah -->
     <?php
     for ($row = 1; $row <= 8; $row++) {
         echo "<tr>";
-        echo "<th class='side'>$row</th>"; // Numerotarea din stânga (1 -> 8)
+        echo "<th class='side'>$row</th>";
 
         for ($col = 0; $col < 8; $col++) {
             $color = ($row + $col) % 2 == 0 ? "black" : "white";
             echo "<td class='$color'></td>";
         }
 
-        echo "<th class='side'>" . (9 - $row) . "</th>"; // Numerotarea din dreapta (8 -> 1)
+        echo "<th class='side'>" . (9 - $row) . "</th>";
         echo "</tr>";
     }
     ?>
-
-    <!-- Rândul de jos cu literele H-A -->
     <tr>
         <th class="header"></th>
         <?php 
