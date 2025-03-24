@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width:100%;
+	height: 100%;
+	background-image: url('../img/fundal.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: 100%;
+	font-size: 14px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.corp {
+	margin: 20px auto;
+	max-width: 90%;
+	border: none;
+	border-radius: 10px;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+.antet {
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.afisare {font-family: Comic Sans MS, cursive, sans-serif; text-align:center; vertical-align: middle;}
+.texte {
+	max-width: 35%;
+	color:purple;
+	float: left;
+}
+.date_form {
+	margin:5px 5px;
+	padding: 10px;
+	max-width: 60%;
+	float: right;
+	min-height: 100px;
+}
+.lat {
+	margin:5px 5px;
+	padding: 10px;
+	max-width: 90%;
+	float: right;
+	min-height: 100px;
+}
+.date_form_guest {
+	margin:10px auto;
+	padding: 15px;
+	max-width: 80%;
+	min-height: 100px;
+}
+.denumire {
+	color: #4d3319;
+	font-weight: bold;
+	padding:0px;
+}
+.linie
+{
+	background-color:#ffffe6;
+	border: 1px solid #696969;
+	color:  #696969;
+	padding:5px;
+	margin: 5px;
+}	
+input[type="submit"], .referinta
+{
+	padding:10px 10px;
+	margin:10px;
+	float: right;
+}
+
+hr {   
+	border: 1px solid pink;
+}
+.err {
+	color: red;
+	font-size: 8px;
+}
+table {
+	max-width: 90%;
+	margin: 10px auto;
+}
+.comanda {
+	padding:10px;
+	max-width: 70%;
+	float: left;
+	text-align: center;
+}
+
