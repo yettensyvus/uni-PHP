@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formular de feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-container input:focus,
+        .form-container textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+
+        .form-container textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .form-container button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h3>Lăsați părerea dumneavoastră despre noi</h3>
+        <form action="index.php" method="POST">
+            <label for="nume">Numele:</label>
+            <input type="text" id="nume" name="nume" placeholder="Enter Text" required>
+
+            <label for="email">Emailul:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Text" required>
+
+            <label for="mesaj">Textul mesajului:</label>
+            <textarea id="mesaj" name="mesaj" placeholder="Enter Text" required></textarea>
+
+            <button type="submit">Trimite</button>
+        </form>
+    </div>
+</body>
+
+</html>
